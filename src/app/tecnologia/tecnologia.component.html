@@ -1,1 +1,83 @@
-<p>tecnologia works!</p>
+<nav class="navbar">
+    <ul class="nav-list">
+
+        <li class="right"><a href="main.html">Inicio</a></li>
+        <li class="right"><a href="profile.html">Mi perfil</a></li> 
+        <li class="right"><a href="mantenimientos.html">Gestión</a></li>
+        <li class="right"><a href="inventory.html">Inventario</a></li>
+
+        <li class="right dropdown">
+          <a href="#">Activos Fijos</a>
+          <div class="dropdown-content">
+              <a href="tecnología.html">Tecnológicos</a>
+              <a href="mobiliario.html">Mobiliario</a>
+              <a href="transporte.html">Transporte</a>
+          </div>
+        </li>
+
+        <li class="search-box">
+            <input type="text" placeholder="Buscar facultades...">
+            <li> <button class="search-btn">Buscar</button> </li> 
+        
+
+     </ul>
+  </nav>
+
+<section>
+  <div class="container">
+
+    <h1>ACTIVOS FIJOS TECNOLÓGICOS</h1>
+
+      <!-- Filtros -->
+      <label for="facultad">Facultad:</label>
+      <select id="facultad">
+          <option value="Facultad de Ciencias de la Vida y Tecnología">Facultad de Ciencias de la Vida y Tecnología</option>
+          <option value="Facultad de Ciencias Sociales, Derecho y Bienestar">Facultad de Ciencias Sociales, Derecho y Bienestar</option>
+          <option value="Facultad de Ciencias Médicas">Facultad de Ciencias Médicas</option>
+          <option value="Facultad de Ingeniería, Industria y Construcción">Facultad de Ingeniería, Industria y Construcción</option>
+          <option value="Facultad de Educación, Turismo, Arte y Humanidades">Facultad de Educación, Turismo, Arte y Humanidades</option>
+          <option value="Facultad de Ciencias Administrativas, Contables y Comercio">Facultad de Ciencias Administrativas, Contables y Comercio</option>
+      </select><br>
+
+      <label for="tipoActivo">Tipo de Activo:</label>
+      <select id="tipoActivo">
+          <option value="PC de escritorio">PC de escritorio</option>
+          <option value="Laptop">Laptop</option>
+          <option value="Impresora">Impresora</option>
+          <option value="Proyector">Proyector</option>
+          <option value="Pizarra Digital">Pizarra Digital</option>
+          <option value="Camara de Seguridad">Cámara de Seguridad</option>
+          <option value="Dispositivo de Almacenamiento Externos">Dispositivo de Almacenamiento Externo</option>
+          <option value="Otro">Otro</option>
+      </select>
+
+      <!-- Detalles del Activo de Transporte -->
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca">
+
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo">
+
+      <label for="numeroSerie">Número de Serie:</label>
+      <input type="text" id="numeroSerie">
+
+      <label for="valorAproximado">Costo de Adquisición:</label>
+      <input type="text" id="valorAproximado">
+
+      <label for="estadoFisico">Estado Físico:</label>
+      <select id="estadoFisico">
+          <option value="bueno">Bueno</option>
+          <option value="regular">Regular</option>
+          <option value="malo">Malo</option>
+      </select>
+
+      <label for="observacion">Observación:</label>
+      <textarea id="observacion" rows="4" cols="50"></textarea>  
+
+
+      <button class="boton" onclick="guardarActivo('tecnología')">Guardar/Enviar</button>
+
+      <!-- Listado de Activos -->
+      <ul id="listadoTecnologicosUl"></ul>
+  </div>
+</section>
