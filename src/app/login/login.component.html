@@ -1,0 +1,14 @@
+
+<div class="login-container">
+  <img src="assets/LOGOULEAM.png" alt="Logo de la ULEAM">
+  <h1>Gestión de activos fijos de la ULEAM</h1>
+  <h2>Iniciar Sesión</h2>
+ 
+<form id="loginForm" (ngSubmit)="onLogin()">
+<input type="text" name="username" required>
+<input type="password" name="password" required>
+<button type="submit" (click)="handleLoginClick($event)">Iniciar</button>
+</form>
+</div>
+
+
