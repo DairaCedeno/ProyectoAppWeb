@@ -1,0 +1,12 @@
+{
+  "routes": [
+    "/",
+    "/inventory",
+    "/main",
+    "/mantenimientos",
+    "/mobiliario",
+    "/profile",
+    "/tecnologia",
+    "/transporte"
+  ]
+}
